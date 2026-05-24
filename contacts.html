@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Контакты — Танцевальная студия | Хобби и стили танцев</title>
+    <link rel="stylesheet" href="./contacts.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="page-title">📞 Контакты</h1>
+        <div class="subhead">Свяжитесь с нами — танцевальное вдохновение 24/7</div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__li"><a href="./index.html">Главная</a></li>
+                <li class="header__li"><a href="./dance_gallery.html">Танцы</a></li>
+                <li class="header__li"><a href="./contacts.html">Контакты</a></li>
+                <li class="header__li"><a href="#">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contacts-grid">
+            <div class="card dev-info">
+                <h3>Информационная карточка</h3>
+                <p><strong>ФИО разработчика сайта:</strong>Механошина Алина</p>
+                <p><strong>Контактный email:</strong> <a href="mailto:underverse.1506@gmail.com" style="color:#f0bdd5;">underverse.1506@gmail.com</a></p>
+                <p><strong>Тематическая специализация:</strong> Танцевальные стили, хобби-танцы</p>
+                <p><strong>Географическое положение:</strong> г. Москва, ул. Академика Миллионщикова 20</p>
+                <p><strong>Социальные сети / мессенджеры:</strong></p>
+                <div class="social-links">
+                    <a href="#" class="social-link" target="_blank">Telegram</a>
+                    <a href="#" class="social-link" target="_blank">Instagram</a>
+                    <a href="#" class="social-link" target="_blank">TikTok</a>
+                </div>
+                <p style="font-size:0.85rem; margin-top:0.6rem;">онлайн консультации по танцевальным направлениям</p>
+            </div>
+            <div class="card">
+                <h3>Напишите нам</h3>
+                <form id="feedbackForm" action="#" method="post">
+                    <div class="form-group">
+                        <label>Имя <span class="required-star">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="example@dance.ru" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Тема сообщения</label>
+                        <select id="topic" name="topic">
+                            <option value="Запись на пробный урок">Запись на пробный урок</option>
+                            <option value="Вопрос по хобби и стилям">Вопрос по стилям</option>
+                            <option value="Сотрудничество">Сотрудничество</option>
+                            <option value="Обратная связь о сайте">Обратная связь о сайте</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение <span class="required-star">*</span></label>
+                        <textarea id="message" name="message" rows="4" placeholder="Расскажите о вашем танцевальном опыте или задайте вопрос..." required></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent" style="margin-bottom:0;">Я соглашаюсь на обработку персональных данных и принимаю политику конфиденциальности <span class="required-star">*</span></label>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить сообщение</button>
+                    <div id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+        <div class="additional-block">
+            <div class="info-card">
+                <h4>График работы</h4>
+                <div class="schedule-item"><span>Понедельник — Пятница:</span><span>12:00 – 22:00</span></div>
+                <div class="schedule-item"><span>Суббота:</span><span>10:00 – 18:00</span></div>
+                <div class="schedule-item"><span>Воскресенье:</span><span>Выходной (занятия по записи)</span></div>
+                <div class="schedule-item"><span>Техподдержка сайта:</span><span>онлайн-чат 09-21</span></div>
+                <p style="margin-top:0.8rem; font-size:0.8rem;">Групповые и индивидуальные уроки — по предварительной записи.</p>
+            </div>
+            <div class="info-card">
+                <h4>Часто задаваемые вопросы</h4>
+                <div class="faq-question">➤ Можно ли начать танцевать с нуля во взрослом возрасте?</div>
+                <div class="faq-answer">Абсолютно! Наша студия ориентирована на хобби и душу. Преподаватели адаптируют программу под ваш уровень.</div>
+                <div class="faq-question">➤ Какие стили танцев представлены на сайте?</div>
+                <div class="faq-answer">Хип-хоп, джазфанк, брейк-данс, народные танцы и многое другое.</div>
+                <div class="faq-question">➤ Как узнать расписание мастер-классов?</div>
+                <div class="faq-answer">Подпишитесь на рассылку или напишите в форму — вышлем актуальный график.</div>
+                <div class="faq-question">➤ Есть ли онлайн-уроки?</div>
+                <div class="faq-answer">Да, регулярно публикуем видеоуроки и проводим прямые эфиры в соцсетях.</div>
+            </div>
+            <div class="info-card">
+                <h4>Инструкция по связи</h4>
+                <div class="instruction-step">1️. Заполните форму обратной связи выше — укажите имя, email и тему.</div>
+                <div class="instruction-step">2️. Отправьте сообщение, и в течение 1 рабочего дня мы ответим на ваш email.</div>
+                <div class="instruction-step">3️. Для срочных вопросов: напишите в Telegram/WhatsApp (кнопки соцсетей) с пометкой «Срочный вопрос». Отвечаем в мессенджерах с 12 до 20.</div>
+                <div class="instruction-step">4️. Также можно посетить студию лично (по предварительной записи). Будем рады вас видеть!</div>
+                <div class="instruction-step">⭐️ При обращении указывайте тему танца, чтобы мы могли точнее помочь.</div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            🌟 Танцевальное хобби объединяет ритм и душу. Свяжитесь с нами — мы поддержим ваше вдохновение! 🌟
+        </footer>
+    </div>
+</body>

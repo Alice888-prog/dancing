@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Танцы</title>
+    <link rel="stylesheet" href="./dance_gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1>Разновидности танцев</h1> <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">Танцы</span></p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="dance_gallery.html" class="nav-link active">Танцы</a></li>
+                <li><a href="./contacts.html" class="nav-link">Контакты</a></li>
+                <li><a href="#" class="nav-link">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="gallery-container">
+         <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i> Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i> Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">все</button>
+                <button class="filter-btn active" data-filter="all">выразительный</button>
+                <button class="filter-btn active" data-filter="all">резкий</button>
+                <button class="filter-btn active" data-filter="all">плавный</button>
+                <button class="filter-btn active" data-filter="all">силовой</button>
+                <button class="filter-btn active" data-filter="all">ритмичный</button>
+            </div>
+        </div>
+        <div class="gallery-grid" id="image-gallery">
+            <article class="image-card" data-category="nature">
+                <div class="card-image">
+                    <img src="./assets/hiphop.jpg" alt="Группа людей танцуют хип-хоп" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Хип-хоп</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 15 марта 2024</p> <p class="image-description">Уличный танец, зародившийся в Нью-Йорке в 1970-х годах. Это часть культуры хип-хоп (наряду с рэпом и диджеингом). Отличается энергичными движениями, раскачкой (bounce), четкой координацией и импровизацией. Основная цель — самовыражение и взаимодействие с ритмом музыки.</p>
+                    <div class="image-tags">
+                        <span class="tag">ритмичный</span>
+                        <span class="tag">выразительный</span>
+                        <span class="tag">резкий</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/jaz-funk.jpg" alt="Группа людей танцуют джазфанк" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Джазфанк</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Современное танцевальное направление, которое сочетает технику классического джаза с элементами уличных стилей и эстрадной хореографии. Часто используется в клипах и шоу. Главное здесь — подача, эмоции и зрелищность.</p>
+                    <div class="image-tags">
+                        <span class="tag">выразительный</span>
+                        <span class="tag">резкий</span>
+                        <span class="tag">плавный</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/break-dance.jpg" alt="Группа людей танцуют брейк-данс" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Брейк-данс</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Один из первых стилей хип-хоп культуры. Это сложно-координационный танец, включающий в себя элементы акробатики и силовые вращения. Делится на нижний брейк (вращения на полу: «вертушки», «замолотки») и верхний брейк (робот, волны). Сегодня это олимпийский вид спорта.</p>
+                    <div class="image-tags">
+                        <span class="tag">силовой</span>
+                        <span class="tag">ритмичный</span>
+                        <span class="tag">резкий</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/narodniye.jpg" alt="Группа людей танцуют народные танцы" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Народные танцы</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Танцы, созданные народом и отражающие его традиции, характер и быт. Для русских народных танцев характерны широта движений, удальство и веселье. Основные элементы: хороводы (плавные, девичьи), пляски (быстрые, парные), дроби, присядки (у мужчин) и работа с платком (у женщин).</p>
+                    <div class="image-tags">
+                        <span class="tag">ритмичный</span>
+                        <span class="tag">плавный</span>
+                        <span class="tag">выразительный</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/classic ballet.jpg" alt="Группа людей танцуют балет" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Классический балет</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Основа всей европейской хореографии. Театральный танец, где история передается через движения (пантомиму) под музыку. Отличается строгой техникой: выворотность ног, высокие прыжки, изящные линии. Требует многолетней подготовки у станка.</p>
+                    <div class="image-tags">
+                        <span class="tag">плавный</span>
+                        <span class="tag">силовой</span>
+                        <span class="tag">выразительный</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/contemporary.jpg" alt="Два человека танцуют контемпорари" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Контемпорари</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Современный танец XX-XXI века, который отрицает строгие рамки балета. В нем много работы с полом, дыханием, расслаблением и падениями. Танец направлен на выражение глубоких эмоций и внутреннего мира танцора, часто используется философский подтекст.</p>
+                    <div class="image-tags">
+                        <span class="tag">плавный</span>
+                        <span class="tag">силовой</span>
+                        <span class="tag">выразительный</span>
+                    </div>
+                </div>
+            </article>
+             <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/tango.jpg" alt="Два человека танцуют танго" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Танго</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Эмоциональный парный бальный танец, возникший в Аргентине. Отличается резкими остановками, неожиданными поворотами и тесным контактом партнеров. Его часто называют «разговором двух тел» за страстный и драматичный характер исполнения.</p>
+                    <div class="image-tags">
+                        <span class="tag">плавный</span>
+                        <span class="tag">резкий</span>
+                        <span class="tag">выразительный</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/irish dance.jpg" alt="Группа людей танцуют ирландский танец" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Ирландские танцы</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Известны благодаря шоу Riverdance. Главная фишка — корпус и руки остаются неподвижными, а ноги выполняют быструю и четкую работу. Танцуют чаще всего в жесткой обуви, чтобы создавать ритмичный перестук (чечетку).</p>
+                    <div class="image-tags">
+                        <span class="tag">ритмичный</span>
+                        <span class="tag">резкий</span>
+                        <span class="tag">силовой</span>
+                    </div>
+                </div>
+            </article>
+            <article class="image-card" data-category="city">
+                <div class="card-image">
+                    <img src="./assets/vogue.jpg" alt="Группа людей танцуют Вог" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                        <button class="zoom-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Вог (Vogue)</h3>
+                    <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+                    <p class="image-description">Известны благодаря шоу Riverdance. Главная фишка — корпус и руки остаются неподвижными, а ноги выполняют быструю и четкую работу. Танцуют чаще всего в жесткой обуви, чтобы создавать ритмичный перестук (чечетку).</p>
+                    <div class="image-tags">
+                        <span class="tag">ритмичный</span>
+                        <span class="tag">резкий</span>
+                        <span class="tag">силовой</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+        <aside class="gallery-info">
+            <h3><i class="fas fa-lightbulb"></i> Интересный факт</h3>
+            <p>Всего 15 минут танцев способны поднять уровень серотонина и эндорфинов в крови так же эффективно, как получасовая пробежка, но при этом танцы задействуют больше мышц и заставляют работать оба полушария мозга одновременно.</p>
+        </aside>
+    </main>
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2024</span> Алина. Все права защищены.</p>
+            <p class="js-status">JavaScript загружен и работает!</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
